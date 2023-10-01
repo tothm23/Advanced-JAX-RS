@@ -29,4 +29,8 @@ public class MyDate {
 		this.year = year;
 	}
 
+	@Override
+	public String toString() {
+		return "MyDate [date=" + date + ", month=" + month + ",  year=" + year + "]";
+	}
 }
