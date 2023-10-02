@@ -6,7 +6,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("date/{dateString}")
+@Path("test")
 public class DateResource {
 
 	@GET
