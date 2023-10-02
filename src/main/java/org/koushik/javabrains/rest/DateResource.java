@@ -10,7 +10,8 @@ import javax.ws.rs.core.MediaType;
 public class DateResource {
 
 	@GET
-	@Produces(MediaType.TEXT_PLAIN)
+	// Választható adattípusok
+	@Produces(value = { MediaType.TEXT_PLAIN, "text/shortdate" })
 	public String getRequestedDate(@PathParam("dateString") MyDate myDate) {
 		return "Got " + myDate.toString();
 	}
